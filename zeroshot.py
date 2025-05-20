@@ -8,7 +8,7 @@ from openai import OpenAI
 load_dotenv()
 client = OpenAI()
 
-def get_all_image_paths(folder="Au_sample"):
+def get_all_image_paths(folder):
     """Return all image file paths in the folder with valid extensions."""
     valid_extensions = ('.jpg', '.jpeg', '.png')
     return [
@@ -58,9 +58,10 @@ def send_image_to_openai(image_path):
     return result
 
 def main():
-    output_csv = "Au_sample_llm_decisions_zero_shot.csv"
+    folder = "Sp_sample"
+    output_csv = "Sp_sample_llm_decisions_zero_shot.csv"
 
-    image_paths = get_all_image_paths()
+    image_paths = get_all_image_paths(folder)
 
     with open(output_csv, mode='w', newline='') as csvfile:
         writer = csv.writer(csvfile)
