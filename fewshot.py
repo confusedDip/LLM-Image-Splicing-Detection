@@ -26,9 +26,6 @@ def encode_image_to_base64(image_path):
 
 def extract_category_from_filename(filename):
     """Extract category from authentic or spliced filename."""
-    # if filename.startswith("Au_"):
-        # match = re.match(r"Au_(\w+)_\d+", filename)
-        # return match.group(1) if match else None
     if 'ani' in filename:
         return 'ani'
     elif 'arc' in filename:
@@ -37,36 +34,21 @@ def extract_category_from_filename(filename):
         return 'cha'
     else:
         return None
-    # if filename.startswith("Tp_"):
-    #     match = re.search(r'_(\w+)\d+_(\w+)\d+_', filename)
-    #     if match:
-    #         return match.group(1), match.group(2)
-    # return None
 
 def select_few_shot_examples(input_filename, au_pool, sp_pool):
     """Select 2 matching authentic and 2 matching spliced examples based on input image's category."""
     filename = os.path.basename(input_filename)
     category = extract_category_from_filename(filename)
 
-    # if isinstance(category, tuple):
-    #     relevant_cats = set(category)
-    # else:
-    #     relevant_cats = {category}
-
-    # Precise pattern matching: e.g., 'Au_arc_' or '_arc\d+_'
     matching_au = []
     for p in au_pool:
         base = os.path.basename(p)
-        # match = re.match(r"Au_(\w+)_\d+", base)
-        # if match and match.group(1) in relevant_cats:
         if category in base:
             matching_au.append(p)
 
     matching_sp = []
     for p in sp_pool:
         base = os.path.basename(p)
-        # match = re.search(r'_(\w+)\d+_(\w+)\d+_', base)
-        # if match and (match.group(1) in relevant_cats or match.group(2) in relevant_cats):
         if category in base:
             matching_sp.append(p)
 
@@ -83,7 +65,7 @@ def generate_few_shot_prompt(auth_paths, splice_paths):
 
     for path in auth_paths:
         base64_img = encode_image_to_base64(path)
-        messages.append({"type": "text", "text": "This image is Authentic."})
+        messages.append({"type": "text", "text": "For example, this image is Authentic."})
         messages.append({
             "type": "image_url",
             "image_url": {"url": f"data:image/jpeg;base64,{base64_img}"}
@@ -91,7 +73,7 @@ def generate_few_shot_prompt(auth_paths, splice_paths):
 
     for path in splice_paths:
         base64_img = encode_image_to_base64(path)
-        messages.append({"type": "text", "text": "This image is Spliced."})
+        messages.append({"type": "text", "text": "For example, this image is Spliced."})
         messages.append({
             "type": "image_url",
             "image_url": {"url": f"data:image/jpeg;base64,{base64_img}"}
@@ -127,8 +109,8 @@ def send_image_to_openai_with_fewshot(image_path, au_examples, sp_examples):
     return result
 
 def main():
-    folder = "CASIA2/Au_sample"
-    output_csv = "results/Au_sample_llm_decisions_few_shot.csv"
+    folder = "CASIA2/Sp_sample"
+    output_csv = "results/Sp_sample_llm_decisions_few_shot_run2.csv"
 
     image_paths = get_all_image_paths(folder)
 
