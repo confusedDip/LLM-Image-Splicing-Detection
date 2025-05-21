@@ -2,7 +2,7 @@ import pandas as pd
 
 def analyze():
     # Load the CSV file
-    file_path = "results/Au_sample_llm_decisions_zero_shot.csv"
+    file_path = "results/Au_sample_llm_decisions_few_shot.csv"
     df = pd.read_csv(file_path)
 
     # Normalize and parse decisions

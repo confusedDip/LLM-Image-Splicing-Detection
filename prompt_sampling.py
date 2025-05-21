@@ -7,7 +7,7 @@ from collections import defaultdict
 categories = ['ani', 'arc', 'cha']
 
 def sample_authentic_for_prompt(
-        input_dir = "CASIA2/Au_sample", output_dir = "CASIA2/Au_prompt", total_samples = 38):
+        input_dir = "CASIA2/Au_sample", output_dir = "CASIA2/Au_additional", total_samples = 38):
 
     os.makedirs(output_dir, exist_ok=True)
 
@@ -49,7 +49,7 @@ def sample_authentic_for_prompt(
 
 
 def sample_spliced_for_prompt(
-    input_dir = "CASIA2/Sp_sample", output_dir = "CASIA2/Sp_prompt", total_samples = 50):
+    input_dir = "CASIA2/Sp_sample", output_dir = "CASIA2/Sp_additional", total_samples = 50):
     os.makedirs(output_dir, exist_ok=True)
 
     # Regex to extract source and destination categories
