@@ -1,8 +1,11 @@
-import os
-import csv
+"""
+Evaluation with Few-Shot Prompt Strategy
+"""
+
 import base64
+import csv
+import os
 import random
-import re
 from dotenv import load_dotenv
 from openai import OpenAI
 

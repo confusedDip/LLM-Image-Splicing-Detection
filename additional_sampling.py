@@ -1,3 +1,7 @@
+"""
+Sample additional images for future use in the prompts
+"""
+
 import os
 import shutil
 import random

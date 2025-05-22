@@ -1,3 +1,6 @@
+"""
+Sampling datasets from the original CASIA v2.0 dataset
+"""
 import os
 import shutil
 from collections import Counter

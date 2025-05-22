@@ -1,7 +1,10 @@
+"""
+Evaluation with Few-Shot Chain-of-Thought Prompt Strategy
+"""
+
 import base64
 import csv
 import os
-
 from dotenv import load_dotenv
 from openai import OpenAI
 

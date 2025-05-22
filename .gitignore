@@ -1,5 +1,6 @@
-# The dataset files are not needed to be pushed in the GitHub for now
+# The dataset and result files are not needed to be pushed in the GitHub for now
 /CASIA2
+/results/Sp_sample_llm_decisions_few_shot_run1.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -1,3 +1,6 @@
+"""
+Download the CASIAv2.0 dataset
+"""
 import kagglehub
 
 def download():

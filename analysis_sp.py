@@ -1,8 +1,11 @@
+"""
+Analyze the detection results for Spliced samples
+"""
 import pandas as pd
 
 def analyze():
     # Load the splicing result CSV
-    file_path = "results/Sp_sample_llm_decisions_fewshot_with_cot.csv"
+    file_path = "results/Sp_sample_llm_decisions_fewshot_with_cot.csv" # Replace the Sp results
     df = pd.read_csv(file_path)
 
     # Normalize decision labels
