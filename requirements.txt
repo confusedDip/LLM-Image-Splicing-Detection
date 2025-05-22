@@ -1,0 +1,51 @@
+altgraph @ file:///AppleInternal/Library/BuildRoots/bcce998f-ff34-11ef-9d34-f2a857e00a32/Library/Caches/com.apple.xbs/Sources/python3/altgraph-0.17.2-py2.py3-none-any.whl
+appnope==0.1.4
+asttokens==3.0.0
+bleach==6.2.0
+certifi==2025.4.26
+charset-normalizer==3.4.2
+comm==0.2.2
+debugpy==1.8.14
+decorator==5.2.1
+exceptiongroup==1.3.0
+executing==2.2.0
+future @ file:///AppleInternal/Library/BuildRoots/bcce998f-ff34-11ef-9d34-f2a857e00a32/Library/Caches/com.apple.xbs/Sources/python3/future-0.18.2-py3-none-any.whl
+idna==3.10
+importlib_metadata==8.7.0
+ipykernel==6.29.5
+ipython==8.18.1
+jedi==0.19.2
+jupyter_client==8.6.3
+jupyter_core==5.7.2
+kaggle==1.7.4.5
+kagglehub==0.3.12
+macholib @ file:///AppleInternal/Library/BuildRoots/bcce998f-ff34-11ef-9d34-f2a857e00a32/Library/Caches/com.apple.xbs/Sources/python3/macholib-1.15.2-py2.py3-none-any.whl
+matplotlib-inline==0.1.7
+nest-asyncio==1.6.0
+packaging==25.0
+parso==0.8.4
+pexpect==4.9.0
+platformdirs==4.3.8
+prompt_toolkit==3.0.51
+protobuf==6.31.0
+psutil==7.0.0
+ptyprocess==0.7.0
+pure_eval==0.2.3
+Pygments==2.19.1
+python-dateutil==2.9.0.post0
+python-slugify==8.0.4
+PyYAML==6.0.2
+pyzmq==26.4.0
+requests==2.32.3
+six @ file:///AppleInternal/Library/BuildRoots/bcce998f-ff34-11ef-9d34-f2a857e00a32/Library/Caches/com.apple.xbs/Sources/python3/six-1.15.0-py2.py3-none-any.whl
+stack-data==0.6.3
+text-unidecode==1.3
+tornado==6.5
+tqdm==4.67.1
+traitlets==5.14.3
+typing_extensions==4.13.2
+urllib3==2.4.0
+vboxapi==1.0
+wcwidth==0.2.13
+webencodings==0.5.1
+zipp==3.21.0
