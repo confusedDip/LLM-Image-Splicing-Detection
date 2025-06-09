@@ -37,4 +37,16 @@ This project investigates the capabilities of GPT-4V in detecting image splicing
 
 ### Citation
 
-If you find this work useful, please consider citing our paper (citation details will be added upon formal publication).
+If you find this work useful, please consider citing our paper.
+
+```
+@misc{nath2025chatgptperformimagesplicing,
+      title={{“Spliced, or not spliced, that is the question”: Can ChatGPT Perform Image Splicing Detection? A Preliminary Study}}, 
+      author={Souradip Nath},
+      year={2025},
+      eprint={2506.05358},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2506.05358}, 
+}
+```
