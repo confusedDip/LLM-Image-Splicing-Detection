@@ -1,7 +1,7 @@
 # Image Splicing Detection using GPT-4V
 
 This repository accompanies the paper:  
-**“Spliced, or Not Spliced, That Is the Question”: Can ChatGPT Perform Image Splicing Detection? A Preliminary Study**  
+**“Spliced, or not spliced, that is the question”: Can ChatGPT Perform Image Splicing Detection? A Preliminary Study**  
 Authored by [Souradip Nath (@confusedDip)](https://github.com/confusedDip)
 
 This project investigates the capabilities of GPT-4V in detecting image splicing without any task-specific training. The repository contains code for dataset preparation, multimodal prompting strategies, and performance analysis as described in the paper.
